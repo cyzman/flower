@@ -1,0 +1,13 @@
+<!--pages/welcome/welcome.wxml-->
+
+<view class="container">
+  <!-- <image class="avatar" src="/images/avatar/1.png"></image> -->
+  <l-avatar class="l-avatar" placement="bottom" shape="square" open-data="{{['userAvatarUrl', 'userNickName']}}" size="200" />
+  <text class="motto">Hello, 艾克拉斯</text>
+  <!-- <button>button样式难以控制</button> -->
+  <view bind:tap="onTap" class="journey-container">
+    <text class="journey">开启小程序之旅</text>
+  </view>
+</view>
+
+<!-- flex 容器布局 -->

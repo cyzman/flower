@@ -1,0 +1,11 @@
+{
+  "entryPagePath": "pages/welcome/welcome",
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/posts/posts"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#c22a1e"
+  },
+  "sitemapLocation": "sitemap51.json"
+}

@@ -1,0 +1,37 @@
+<view>
+  <swiper interval="{{3000}}" circular vertical="{{false}}" indicator-dots autoplay="true">
+    <swiper-item>
+      <image src="/images/iqiyi.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/vr.png"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="/images/wx.png"></image>
+    </swiper-item>
+  </swiper>
+
+  <block wx:for="{{posts}}">
+    <view class="post-container">
+      <view class="post-author-date">
+        <image class="post-author" shape="square" src="/images/post/cat.png"></image>
+        <text wx:if="{{flag}}"  class="post-date">{{item.date}}</text>
+      </view>
+      <text class="post-title">{{item.title}}</text>
+      <image class="post-image" src="/images/post/sls.jpg"></image>
+      <text class="post-content">{{item.content}}</text>
+
+      <view class="post-like">
+        <!-- <image class="post-like-image" src="/images/icon/chat.png"></image> -->
+        <l-icon  class="post-like-image" size="32" color="#666" name="favor" />
+        <text class="post-like-font">{{item.dataNum.collection}}</text>
+        <!-- <image class="post-like-image"  src="/images/icon/view.png"></image> -->
+        <l-icon  class="post-like-image" size="32" color="#666" name="eye" />
+        <text class="post-like-font">{{dataNum.reading}}</text>
+      </view>
+      <l-icon size="128" color="#123456" name="cart" />
+      <l-icon name="research" />
+
+    </view>
+  </block>
+</view>
